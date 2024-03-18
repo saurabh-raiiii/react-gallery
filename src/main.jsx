@@ -8,6 +8,7 @@ import Error_Page from "./page/ErrorPage.jsx";
 import Contact from "./page/Contact.jsx";
 import Gallary from "./page/Gallary.jsx";
 import Login from "./page/Login.jsx";
+import SignUp from "./page/SignUp.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
     element: <Gallary />,
   },
   { path: "/login", element: <Login /> },
-  { path: "signup", element: <h1>sign up</h1> },
+  { path: "/signup", element: <SignUp/> },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
