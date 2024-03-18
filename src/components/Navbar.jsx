@@ -53,6 +53,18 @@ export default function Navbar() {
               Contact
             </NavLink>
           </li>
+          <li className="mx-4">
+            <NavLink
+              to="/login"
+               className={({isActive}) =>
+                isActive
+                  ? "ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500 active "
+                  : " text-gray-600 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
+              }
+            >
+              Sign In
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </>
