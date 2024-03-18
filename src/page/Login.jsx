@@ -10,7 +10,7 @@ function Login() {
       <div className='flex bg-orange-200 w-full h-screen '>
         <div className="flex w- justify-items-center">
             <div className='container1'>
-                image portion
+                image Section
             </div>
             <div className='container2'>
                 login portion
