@@ -2,10 +2,11 @@ import React from "react";
 import "../App.css";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+import signup_img from  "../assets/signup.svg";
 
 function SignUp() {
     let image_link =
-    "https://images.unsplash.com/photo-1710631221945-202865ddd3a1?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    "https://img.freepik.com/vecteurs-libre/illustration-concept-mot-passe-oublie_114360-1095.jpg?w=2000";
     return (
       <>
         <div className="h-[6vh]">
@@ -13,12 +14,12 @@ function SignUp() {
         </div>
         <div className="bg-gray-200 h-[94vh] flex items-center justify-center flex-col">
         
-          <div className="flex rounded-s-lg shadow-sm bg-white w-[50%]">
-            <div className=" md:w-[50%] h-auto">
-              <img src={image_link} alt="image" srcset="" className="rounded-lg" />
+          <div className="flex rounded-lg shadow-sm bg-white h-[70%] w-[50%]">
+            <div className="flex items-center md:w-[50%] h-auto">
+              <img src={signup_img} alt="image" srcset="" className="rounded-l-lg" />
             </div>
-            <div className="flex bg-white md:w-[50%] h-auto justify-center flex-col  gap-3 items-center ">
-              <div className="flex items-center mb-14 w-[90%]">
+            <div className="flex bg-white md:w-[50%] h-auto justify-center flex-col  gap-3 items-center rounded-r-lg">
+              <div className="flex items-center mb-6 w-[90%]">
                 <p className="text-4xl text-black ">SignUp </p>
               </div>
               <div className="w-[90%] justify-center flex flex-col gap-3">
@@ -27,6 +28,7 @@ function SignUp() {
                   <input
                     className="bg-gray-100 border-gray-100 outline-none h-10 w-[100%] p-2 border-2 focus:bg-white focus:border-2 focus:border-black"
                     type="text"
+                    placeholder="Username"
                   />
                 </div>
                 <div>
@@ -34,6 +36,7 @@ function SignUp() {
                   <input
                     className="bg-gray-100 border-gray-100 outline-none h-10 w-[100%] p-2 border-2 focus:bg-white focus:border-2 focus:border-black"
                     type="text"
+                    placeholder="example@gmail.com"
                   />
                 </div>
   
@@ -44,6 +47,7 @@ function SignUp() {
                     type="password"
                     name=""
                     id=""
+                    placeholder="Enter your password"
                   />
                 </div>
 
@@ -54,6 +58,7 @@ function SignUp() {
                     type="password"
                     name=""
                     id=""
+                    placeholder="Please enter your password again."
                   />
                 </div>
   

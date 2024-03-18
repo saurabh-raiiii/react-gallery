@@ -9,6 +9,7 @@ import Contact from "./page/Contact.jsx";
 import Gallary from "./page/Gallary.jsx";
 import Login from "./page/Login.jsx";
 import SignUp from "./page/SignUp.jsx";
+import AboutUs from "./page/AboutUs.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,17 +22,21 @@ const router = createBrowserRouter([
     element: <Contact />,
   },
   {
+    path: "/about",
+    element: <AboutUs />,
+  },
+  {
     path: "/gallary",
     element: <Gallary />,
   },
   { path: "/login", element: <Login /> },
-  { path: "/signup", element: <SignUp/> },
+  { path: "/signup", element: <SignUp /> },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider>
       <RouterProvider router={router} />
     </ThemeProvider>
   </React.StrictMode>
-)
+);
