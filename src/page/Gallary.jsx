@@ -26,18 +26,20 @@ export default function Gallary() {
       <div className="mb-2">
         <Navbar />
       </div>
-      <p className="m-2 text-base md:text-3xl my-2">Gallary</p>
-      <div className="m-2 columns-3 md:columns-4 lg:columns-5">
-        {imageList.map((item) => {
-          return (
-            <>
-              <LazyLoadImage
-                src={item}
-                className="mb-2 md:mb-4 rounded-lg border-amber-800 shadow-md border-4"
-              />
-            </>
-          );
-        })}
+      <div className="md:w-[90%]">
+        <p className="m-2 text-base md:text-3xl my-2">Gallary</p>
+        <div className="m-2 columns-3 md:columns-4 lg:columns-5">
+          {imageList.map((item) => {
+            return (
+              <div className="overflow-hidden border-amber-800 shadow-md border-4 rounded-lg cursor-pointer">
+                <LazyLoadImage
+                  src={item}
+                  className="mb-2 md:mb-4 rounded-lg scale-110 "
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );
