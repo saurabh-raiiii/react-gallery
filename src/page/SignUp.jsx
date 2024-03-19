@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import signup_img from  "../assets/signup.svg";
 
 function SignUp() {
-    let image_link =
-    "https://img.freepik.com/vecteurs-libre/illustration-concept-mot-passe-oublie_114360-1095.jpg?w=2000";
+
     return (
       <>
         <div className="h-[6vh]">

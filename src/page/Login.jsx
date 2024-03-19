@@ -58,7 +58,7 @@ function Login() {
               <div>
                 <button className="flex flex-row justify-center items-center h-10 w-[100%] bg-gray-200 duration-300 gap-2 border-2 border-gray-300 hover:border-black">
                   <img className="h-[70%]" src={google_img} alt="google_icon"/>
-                  <span>Sing in with Google</span>
+                  <span>Sign in with Google</span>
                 </button>
               </div>
             </div>
