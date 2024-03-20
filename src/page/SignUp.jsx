@@ -3,6 +3,7 @@ import "../App.css";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import signup_img from  "../assets/signup.svg";
+import google_img from  "../assets/google_icon.svg";
 
 function SignUp() {
 
@@ -13,7 +14,7 @@ function SignUp() {
         </div>
         <div className="bg-gray-200 h-[94vh] flex items-center justify-center flex-col">
         
-          <div className="flex rounded-lg shadow-sm bg-white h-[70%] w-[50%]">
+          <div className="flex rounded-lg shadow-sm bg-white h-[85%] w-[50%]">
             <div className="flex items-center md:w-[50%] h-auto m-5">
               <img src={signup_img} alt="image" srcset=""  />
             </div>
@@ -72,6 +73,12 @@ function SignUp() {
                     value="Sign Up"
                   />
                 </div>
+                <div>
+                <button className="flex flex-row justify-center items-center h-10 w-[100%] bg-gray-200 duration-300 gap-2 border-2 border-gray-300 hover:border-black">
+                  <img className="h-[70%]" src={google_img} alt="google_icon"/>
+                  <span>Sign Up with Google</span>
+                </button>
+              </div>
               </div>
             </div>
           </div>

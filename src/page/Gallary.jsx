@@ -23,11 +23,10 @@ export default function Gallary() {
 
   return (
     <>
-      <div className="mb-2">
+      <div className="md:w-[90%] md:m-auto mb-5">
         <Navbar />
       </div>
-      <div className="md:w-[90%]">
-        <p className="m-2 text-base md:text-3xl my-2">Gallary</p>
+      <div className="md:w-[90%] md:m-auto">
         <div className="m-2 columns-3 md:columns-4 lg:columns-5">
           {imageList.map((item) => {
             return (
