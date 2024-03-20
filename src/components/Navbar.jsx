@@ -3,11 +3,14 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
-      <div className="flex  justify-center flex-row">
-        <div className="">
+      <div className="flex flex-row justify-between my-2 items-center">
+        {/* Logo section  */}
+        <div className=" bg-blue-gray-500 rounded-full md:w-12 md:h-12">
           <img src="" />
         </div>
-        <nav className="bg-gray-200 p-4 rounded-md ">
+
+        {/* ues ection  */}
+        <nav className="bg-gray-200 p-4 rounded-full ">
           <ul className="flex justify-center">
             <li className="mx-4">
               <NavLink
@@ -59,7 +62,9 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
-        <nav className="bg-gray-200 p-4 rounded-md ">
+
+        {/* Auth Links Section */}
+        <nav className="bg-gray-200 p-4 rounded-full">
           <ul className="flex justify-center">
             <li className="mx-4">
               <NavLink
