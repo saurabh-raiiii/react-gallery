@@ -14,7 +14,7 @@ function Login() {
       </div>
       <div className="bg-gray-200 h-[92vh] flex items-center justify-center flex-col">
       
-        <div className="flex rounded-lg shadow-sm bg-white w-[50%] h-[70%]">
+        <div className="flex rounded-lg shadow-sm bg-white w-[50%] h-[85%]">
           <div className="flex items-center md:w-[50%] h-auto m-5">
             <img src={login_img} alt="image" srcset="" />
           </div>

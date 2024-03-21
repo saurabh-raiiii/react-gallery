@@ -19,43 +19,43 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   isActive
                     ? "ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500 active "
-                    : " text-gray-600 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
+                    : " text-gray-500 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
                 }
               >
                 Home
               </NavLink>
-            </li>
-            <li className="mx-4">
+            </div>
+            <div className="mx-4">
               <NavLink
                 to="/gallary"
                 className={({ isActive }) =>
                   isActive
                     ? "ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500 active "
-                    : " text-gray-600 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
+                    : " text-gray-500 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
                 }
               >
                 Gallery
               </NavLink>
-            </li>
-            <li className="mx-4">
+            </div>
+            <div className="mx-4">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
                   isActive
                     ? "ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500 active "
-                    : " text-gray-600 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
+                    : " text-gray-500 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
                 }
               >
                 About
               </NavLink>
-            </li>
-            <li className="mx-4">
+            </div>
+            <div className="mx-4">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
                   isActive
                     ? "ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500 active "
-                    : " text-gray-600 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
+                    : " text-gray-500 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
                 }
               >
                 Contact
@@ -76,10 +76,11 @@ export default function Navbar() {
                     : " text-gray-900 ease-in-out hover:underline transition-colors duration-300 hover:text-white"
                 }
               >
-                Sign In
+                Sign in
               </NavLink>
-            </li>
-            <li className="mx-4">
+            </div>
+            <span className="text-gray-500">&#xa0;&#47;&#xa0;</span>
+            <div className="">
               <NavLink
                 to="/signup"
                 className={({ isActive }) =>
@@ -88,12 +89,13 @@ export default function Navbar() {
                     : " text-gray-900 ease-in-out hover:underline transition-colors duration-300 hover:text-white"
                 }
               >
-                Sign Up
+                Sign up
               </NavLink>
-            </li>
-          </ul>
+            </div>
+          </div>
+        </div>
         </nav>
-      </div>
+        
     </>
   );
 }

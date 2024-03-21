@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
+
 import signup_img from "../assets/signup.svg";
 
 function SignUp() {
