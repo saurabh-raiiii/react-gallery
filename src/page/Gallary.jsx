@@ -47,6 +47,10 @@ export default function Gallary() {
         <Navbar />
 
         <p className="m-2 text-base md:text-3xl my-2">Gallary</p>
+        
+        <div className="">
+
+        </div>
 
         <div className="columns-2 md:columns-3 lg:columns-4 ">
           {imageList.map((item) => {
