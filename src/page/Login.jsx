@@ -9,10 +9,10 @@ function Login() {
 
   return (
     <>
-      <div className="h-[6vh]">
+      <div className="h-[8vh] md:w-[90%] md:m-auto">
         <Navbar />
       </div>
-      <div className="bg-gray-200 h-[94vh] flex items-center justify-center flex-col">
+      <div className="bg-gray-200 h-[92vh] flex items-center justify-center flex-col">
       
         <div className="flex rounded-lg shadow-sm bg-white w-[50%] h-[85%]">
           <div className="flex items-center md:w-[50%] h-auto m-5">

@@ -3,14 +3,17 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
-        <nav className="flex justify-around top-0 static start-0 bg-gray-200 p-4 rounded-md ">
-          <div className="flex items-center text-2xl text-center font-bold">
-            <span>
-              iMage
-            </span>
-          </div>
-          <div className="flex items-center">
-            <div className="mx-4">
+      <div className="flex flex-row justify-between my-2 items-center">
+        {/* Logo section  */}
+        <div className=" bg-orange-500 rounded-full md:w-12 md:h-12 flex justify-center items-center">
+          <span className=" font-semibold text-base">Img</span>
+
+        </div>
+
+        {/* ues ection  */}
+        <nav className="bg-gray-200 p-4 rounded-full ">
+          <ul className="flex justify-center">
+            <li className="mx-4">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -57,17 +60,20 @@ export default function Navbar() {
               >
                 Contact
               </NavLink>
-            </div>
-          </div>
-          <div className="bg-gray-200 p-4 rounded-md ">
-          <div className="flex justify-center">
-            <div className="">
+            </li>
+          </ul>
+        </nav>
+
+        {/* Auth Links Section */}
+        <nav className="bg-green-400 p-4 rounded-full">
+          <ul className="flex justify-center">
+            <li className="mx-4">
               <NavLink
                 to="/login"
                 className={({ isActive }) =>
                   isActive
-                    ? "ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500 active "
-                    : " text-gray-500 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
+                    ? "ease-in-out hover:underline transition-colors duration-300 hover:text-white active:text-white "
+                    : " text-gray-900 ease-in-out hover:underline transition-colors duration-300 hover:text-white"
                 }
               >
                 Sign in
@@ -79,8 +85,8 @@ export default function Navbar() {
                 to="/signup"
                 className={({ isActive }) =>
                   isActive
-                    ? "ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500 active "
-                    : " text-gray-500 ease-in-out hover:underline transition-colors duration-300 hover:text-orange-500"
+                    ? "ease-in-out hover:underline transition-colors duration-300 hover:text-white active:text-white "
+                    : " text-gray-900 ease-in-out hover:underline transition-colors duration-300 hover:text-white"
                 }
               >
                 Sign up

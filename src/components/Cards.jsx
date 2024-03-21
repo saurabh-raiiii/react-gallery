@@ -16,7 +16,7 @@ export default function Card() {
       const imageUrl = URL.createObjectURL(blob);
       setImage(imageUrl);
     } catch (error) {
-      console.error('Error fetching image:', error);
+      console.error("Error fetching image:", error);
       // Optionally handle the error in the UI (e.g., display an error message)
     }
   }
@@ -32,19 +32,32 @@ export default function Card() {
   return (
     <>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        {image && (
+        {/* {image && (
           <LazyLoadImage
           className="w-full object-cover aspect-video"
           src={image}
           alt="Sunset in the mountains"
               />
+        )} */}
+
+        {image.length > "" ? (
+          <LazyLoadImage
+            className="w-full object-cover aspect-video"
+            src={image}
+            alt="Sunset in the mountains"
+          />
+        ) : (
+          <div className="bg-blue-gray-200 aspect-video flex justify-center items-center">
+            <p>Loading...</p>
+          </div>
         )}
+
         <div className="px-4 py-3">
           <div className="text-lg mb-2 text-gray-800">The Coldest Sunset</div>
           <p className="text-gray-600 text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-            quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-            nihil.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
           </p>
         </div>
         <div className="px-6 pt-4 pb-2">
